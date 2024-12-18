@@ -5,7 +5,6 @@ import { serialize } from "next-mdx-remote/serialize";
 import { NextSeo } from "next-seo";
 
 import seo from "data/seo.json";
-import Credits from "src/components/Credits";
 import Renderer from "src/components/Renderer";
 
 interface _Props {
@@ -36,7 +35,6 @@ export default function Home({ source }: _Props) {
           <div id={"lynk-instance"}>
             <Renderer>{source}</Renderer>
           </div>
-          <Credits />
         </div>
         <style jsx global>{``}</style>
       </div>
